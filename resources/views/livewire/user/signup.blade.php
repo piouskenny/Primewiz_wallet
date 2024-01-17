@@ -63,9 +63,10 @@
                 </div>
             </div>
 
-            <div>
-                <p class="text-gray-400 text-center hover:text-gray-900 font-semibold">Already have an account?  <a href="{{route('user.login')}}">Login</a></p>
-            </div>
+            <p class="mt-10 text-center text-sm text-gray-500">
+                Dont have an account?
+                <a href="{{route('user.login')}}" class="font-semibold leading-6 text-gray-600 hover:text-gray-500">Login</a>
+            </p>
 
 
         </form>

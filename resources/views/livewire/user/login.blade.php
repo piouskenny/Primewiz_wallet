@@ -51,7 +51,7 @@
 
         <p class="mt-10 text-center text-sm text-gray-500">
             Not a member?
-            <a href="#" class="font-semibold leading-6 text-gray-600 hover:text-gray-500">Start a 14 day free trial</a>
+            <a href="{{route('user.signup')}}" class="font-semibold leading-6 text-gray-600 hover:text-gray-500">signup</a>
         </p>
     </div>
 </div>

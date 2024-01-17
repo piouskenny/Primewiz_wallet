@@ -18,8 +18,9 @@ class Login extends Component
     {
         $this->validate();
 
-        if (Auth::attemot(['email' => $this->email, 'password' => $this->password])) {
-            session(['user' => Auth::user()]);
+        if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
+            $user = Auth::user();
+            session()->put('user', $user->id);
 
             session()->flash('message', 'Login successful');
 
