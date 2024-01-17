@@ -6,7 +6,7 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <div class="mx-auto">
+    <div class="mx-auto bg-[#F6F6F6] h-screen">
         @yield('content')
         @isset($slot)
         {{ $slot }}
