@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('user_transaction_histories', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id')->constrained('users')->cascadeOnDelete();;
+            $table->string('user_id')->constrained('users')->cascadeOnDelete();
             $table->string('receiver');
             $table->decimal('amount', 10, 2);
             $table->string('transaction_type');
